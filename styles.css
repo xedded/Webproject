@@ -24,3 +24,7 @@ background-color: aqua;
     padding: 20px;
     font-family: arial;
 }
+        .ul1 {
+    
+            list-style-type: none; 
+        }

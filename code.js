@@ -1,3 +1,8 @@
+import * as $ from 'jquery';
+import {movieData} from './data';
+// let movieData = require("./data");
+
+
 function renderMovie(movie){
     $(".Title").text(movie.Title);
     $(".Desc").text(movie.Desc);
@@ -9,30 +14,28 @@ function renderMovie(movie){
         
     }
     $(".Poster").attr("src", movie.Image);        
-
+    
 }
 
 
 function changeStarRating(grade){
- 
-        $(".filled").removeClass("filled");
-        for (let i = 1; i <= grade; i++) {
-            $("[data-rating-id=" + i + "]").addClass("filled");
-            
-        }
+    
+    $(".filled").removeClass("filled");
+    for (let i = 1; i <= grade; i++) {
+        $("[data-rating-id=" + i + "]").addClass("filled");
+        
+    }
     
 }
 $(".starRating").on("click", "span", function(e){
-
+    
     let star = $(e.target);
-  
+    
     let rating = parseInt(star.attr("data-rating-id"));
-  
+    
     changeStarRating(rating);
-  
-  });
-
- 
+    
+});
 
 
 

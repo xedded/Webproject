@@ -14,4 +14,27 @@ function renderMovie(movie){
     document.getElementsByClassName("Poster")[0].setAttribute("src", movie.Image);
 }
 
+
+function changeStarRating(grade){
+    for (let i = 1; i <= 5; i++) {
+        let star = document.getElementById("star" + i);
+        if (i <= grade) {
+            star.classList.add("filled");
+        }
+        else
+        {
+            star.classList.remove("filled")
+        }
+    }
+}
+for (let i = 1; i <= 5; i++) {
+    let star = document.getElementById("star" + i);
+    star.addEventListener("click", () =>{
+        changeStarRating(i);
+    });
+    
+}
+
+
 renderMovie(movieData);
+changeStarRating(2);

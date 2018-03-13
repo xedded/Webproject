@@ -1,0 +1,22 @@
+{
+  "name": "davidsvecka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "code.js",
+  "scripts": {
+    "styles": "lessc styles.less styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xedded/Webproject.git"
+  },
+  "author": "Pontus Segerstad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xedded/Webproject/issues"
+  },
+  "homepage": "https://github.com/xedded/Webproject#readme",
+  "devDependencies": {
+    "less": "^3.0.1"
+  }
+}

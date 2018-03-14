@@ -8,25 +8,9 @@
     
     <link rel="stylesheet" href="styles.css">
 </head>
-<body ng-app="reviewApp">
-    <div ng-controller="reviewController" class="container">
-        <div><img class="poster imgPoster" ng-src="{{movie.Image}}"></div>
-        <div class="desc">
-            <div class="starRating">
-                
-                    <span ng-repeat="i in [1,2,3,4,5,6,7,8,9,10]" ng-class="{filled: rating >= i}" ng-click="changeStarRating(i)">&#9733;</span>
-
-            </div>
-            <h3class="Title">{{movie.Title}}</h3>
-            <p class="Desc">{{movie.Desc}}</p>
-            <ul class="ul1 Actors">
-                    <li ng-repeat="item in movie.Actors">{{item}}</li>
-            </ul>
-        </div>
-    </div>
-    
-    
-    
+<body ng-app="reviewApp" ng-controller="appController as appCtrl">
+        <review movie="appCtrl.movie1"></review>
+        <review movie="appCtrl.movie2"></review>
     <script src="bundle.js"></script>
 </body>
 </html>

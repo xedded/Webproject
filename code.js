@@ -1,5 +1,5 @@
-import * as $ from 'jquery';
-import {movieData} from './data';
+import * as $ from "jquery";
+import {movieData} from "./data";
 // let movieData = require("./data");
 
 

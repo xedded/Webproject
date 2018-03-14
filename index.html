@@ -8,30 +8,19 @@
     
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="container">
-        <div><img class="imgPoster Poster"></div>
+<body ng-app="reviewApp">
+    <div ng-controller="reviewController" class="container">
+        <div><img class="poster imgPoster" ng-src="{{movie.Image}}"></div>
         <div class="desc">
             <div class="starRating">
-                <span data-rating-id="1">&#9733;</span>
-                <span data-rating-id="2">&#9733;</span>
-                <span data-rating-id="3">&#9733;</span>
-                <span data-rating-id="4">&#9733;</span>
-                <span data-rating-id="5">&#9733;</span>
-                <span data-rating-id="6">&#9733;</span>
-                <span data-rating-id="7">&#9733;</span>
-                <span data-rating-id="8">&#9733;</span>
-                <span data-rating-id="9">&#9733;</span>
-                <span data-rating-id="10">&#9733;</span>
                 
-                
-                
-                
+                    <span ng-repeat="i in [1,2,3,4,5,6,7,8,9,10]" ng-class="{filled: rating >= i}" ng-click="changeStarRating(i)">&#9733;</span>
+
             </div>
-            <h3 class="Title"></h3>
-            <p class="Desc"></p>
+            <h3class="Title">{{movie.Title}}</h3>
+            <p class="Desc">{{movie.Desc}}</p>
             <ul class="ul1 Actors">
-                
+                    <li ng-repeat="item in movie.Actors">{{item}}</li>
             </ul>
         </div>
     </div>

@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/xedded/Webproject#readme",
   "devDependencies": {
-    "@types/jquery": "^3.3.1",
+    "@types/angular": "^1.6.43",
     "less": "^3.0.1",
     "stylelint": "^9.1.2",
     "ts-loader": "^4.0.1",
@@ -35,7 +35,7 @@
     "webpack-notifier": "^1.6.0"
   },
   "dependencies": {
-    "jquery": "^3.3.1",
+    "angular": "^1.6.9",
     "npm": "^5.7.1"
   }
 }

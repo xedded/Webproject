@@ -7,5 +7,8 @@
     "rules": {
         "interface-over-type-literal": false
     },
-    "rulesDirectory": []
+    "rulesDirectory": [],
+    "linderOptions": {
+        "exlude": ["node_modules"]
+    }
 }
